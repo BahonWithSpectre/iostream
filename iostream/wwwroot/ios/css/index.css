@@ -1,0 +1,356 @@
+
+:root{
+   --blue: #328dfb;
+   --bgc: #f1f6ff;
+   --bgc2: #faf8fe;
+   --pink: #da00de;
+   --dark: #1c1f23;
+}
+
+@font-face{
+   font-family: MyReg;
+   src: url('../fonts/OpenSans-Regular.ttf');
+}
+@font-face{
+   font-family: MyBold;
+   src: url('../fonts/OpenSans-Bold.ttf');
+}
+@font-face{
+   font-family: MyLight;
+   src: url('../fonts/OpenSans-Light.ttf');
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: MyReg, Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+ }
+ 
+body{
+   background: white;
+}
+.wrap{
+   border-radius: 10px;
+   padding: 0;
+   overflow: hidden;
+   background: linear-gradient(to left, var(--bgc), var(--bgc2), white);
+   position: relative;
+}
+.navbar{
+   max-width: 1200px !important;
+   margin: 0 auto;
+   top: 10px;
+   z-index: 1000;
+   background-color: #fff;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   transition: 0.2s;
+}
+.nav-link{
+   transition: 0.3s;
+}
+.active{
+   font-family: MyBold;
+   color: var(--dark) !important;
+}
+.active_navbar{
+   top: 0;
+   border-radius: 0;
+}
+.navbar-toggler{
+   border: none;
+   border-radius: 1px;
+   color: var(--blue) !important;
+   font-size: 32px;
+   margin-right: -10px;
+}
+
+
+.const-btn{
+   color: white;
+   background-color: var(--blue);
+   padding: 10px 50px;
+   border-radius: 0;
+   border: none;
+   box-shadow: 0 0 2px var(--dark);
+}
+.const-h2{
+   font-size: 40px;
+   font-weight: bold;
+   color: var(--dark);
+}
+.const-h2 span{
+   color: var(--blue);
+   text-shadow: 0 0 1px var(--dark);
+}
+
+
+
+header{
+   width: 100%;
+   background-color: white;
+}
+.logo{
+   height: 50px;
+}
+header .const-btn{
+   background-color: var(--dark);
+}
+header .const-btn:hover{
+   background-color: var(--blue);
+}
+
+
+
+.main_section{
+   height: 600px;
+   background-color: var(--bgc);
+}
+.main_section h1, .main_section p{
+   color: white;
+}
+span.zero{
+   color: var(--pink);
+}
+.main-bg{
+   background-image: url(../img/main.png);
+   background-size: cover;
+   background-position: center;
+}
+
+
+
+.card{
+   max-width: 22rem;
+   margin: 0 auto 30px;
+   border: none;
+   overflow: hidden;
+}
+.card .const-btn{
+   background-color: var(--dark);
+}
+.card .const-btn:hover{
+   background-color: var(--blue);
+}
+.card > img{
+   height: 200px;
+   position: relative;
+   transition: 0.5s;
+}
+.card:hover > img{
+   transition: 3s;
+   transform: scale(1.06);
+}
+.card-text{
+   color: #555;
+   font-family: MyLight;
+}
+.card-title{
+   height: 45px;
+   display: table-cell;
+   vertical-align: middle;
+   font-family: MyBold;
+}
+.card-price{
+   display: block;
+   margin-bottom: 5px;
+}
+
+
+
+.metod_section h1{
+   /* font-family: MyBold; */
+   color: var(--dark);
+}
+.metod_section p{
+   color: #555;
+}
+.metod_section h1 span{
+   color: var(--pink);
+   text-shadow: none;
+   /* font-family: MyBold; */
+   font-weight: bold;
+}
+.metod_section img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   box-shadow: 0 0 3px var(--dark);
+   border-radius: 2px;
+}
+
+
+
+.comfort_section h1 span{
+   color: var(--pink);
+   text-shadow: none;
+}
+.comfort_section .card-title{
+   color: var(--blue);
+}
+
+
+
+
+.form_section input{
+   background: transparent;
+   outline: none;
+   border: none;
+   border-radius: 0;
+   border-bottom: 2px solid var(--blue);
+}
+.form_section input:focus{
+   background: transparent;
+   outline: none;
+   border-color: var(--dark);
+   box-shadow: none;
+}
+
+footer{
+   background: linear-gradient(to left, var(--bgc),  var(--bgc2)) !important;
+}
+footer .text-right{
+   text-align: right;
+}
+footer .logo_hidden{
+   opacity: 0;
+   visibility: hidden;
+}
+.social_list .const-btn{
+   width: 45px;
+   height: 45px;
+   line-height: 55px;
+   background-color: var(--dark);
+   margin-right: 12px;
+   padding: 0;
+   transition: 0.2s;
+   /* border-radius: 50%; */
+   border: none;
+   outline: none;
+}
+.social_list i{
+   color: white;
+   font-size: 30px;
+}
+/* .insta_btn {
+   background: radial-gradient(var(--dark), var(--dark)) !important;
+} */
+.insta_btn:hover {
+   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%) !important;
+}
+.insta_btn:hover, .insta_btn:focus {
+   box-shadow: 0 0 4px var(--pink);
+   border: none;
+}
+
+.telegram_btn:hover {
+   background-color: #2da3e3;
+}
+.telegram_btn:hover, .telegram_btn:focus {
+   box-shadow: 0 0 4px #2da3e3;
+   border: none;
+}
+
+.whatsapp_btn:hover {
+   background-color: #24ce61;
+}
+.whatsapp_btn:hover, .whatsapp_btn:focus {
+   box-shadow: 0 0 4px #24ce61;
+   border: none;
+   outline: none;
+}
+
+
+@media(min-width: 1200px){
+   .wrap{
+      max-width: 1200px;
+   }
+}
+@media(min-width: 576px){
+   .wrap{
+      margin: 20px auto;
+   }
+}
+
+@media(max-width: 1200px){
+   .comfort_section .card-text{
+      font-size: 15px;
+   }
+   .navbar{
+      width: 960px;
+   }
+   .nav-link{
+      margin: 0 !important;
+      margin-right: 10px !important;
+   }
+}
+@media(max-width: 992px){
+   .navbar{
+      width: 721px;
+   }
+   .comfort_section .card-text{
+      font-size: 15px;
+   }
+
+   footer .text-right{
+      text-align: left !important;
+   }
+   footer .logo_hidden{
+      display: none;
+   }
+   .submit_btn{
+      margin-top: 25px !important;
+   }
+}
+@media(max-width: 768px){
+   .navbar{
+      width: 540px;
+   }
+   .main_right{
+      display: none;
+   }
+   .main_section{
+      height: 550px;
+   }
+
+   .comfort_section .card-text, .metod_section .card-text, .course_section .card-text{
+      font-size: 15px;
+   }
+   .form_section p, .metod_section p, .metod_section h1, .comfort_section h1{
+      text-align: center;
+   }
+   .const-h2{
+      font-size: 30px !important;
+   }
+}
+@media(max-width: 575px){
+   .navbar{
+      width: 100%;
+      border-radius: 0;
+      top: 0;
+   }
+   .logo{
+      height: 45px;
+   }
+}
+@media(max-width: 425px){
+   .social_list .const-btn{
+      width: 40px;
+      height: 40px;
+      line-height: 47px;
+   }
+   .social_list i{
+      font-size: 25px;
+   }
+   footer .card-text{
+      font-size: 15px;
+   }
+}
+@media(max-width: 375px){
+   .comfort_section .card-text{
+      font-size: 14px;
+   }
+   .logo{
+      height: 40px;
+   }
+}
